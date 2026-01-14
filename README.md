@@ -1,44 +1,44 @@
 # test5
 
-FastAPI "Hello World" application with pytest tests.
+pytest テストを含む FastAPI "Hello World" アプリケーション
 
-## Installation
+## インストール
 
-Install the required dependencies:
+必要な依存関係をインストールします：
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## Running the Application
+## アプリケーションの実行
 
-Start the FastAPI server:
+FastAPI サーバーを起動します：
 
 ```bash
 uvicorn main:app --reload
 ```
 
-The application will be available at `http://localhost:8000/`
+アプリケーションは `http://localhost:8000/` でアクセス可能になります。
 
-Access the root endpoint to see "Hello World":
+ルートエンドポイントにアクセスして "Hello World" を確認します：
 - URL: `http://localhost:8000/`
-- Response: `{"message": "Hello World"}`
+- レスポンス: `{"message": "Hello World"}`
 
-## API Documentation
+## API ドキュメント
 
-FastAPI provides automatic interactive API documentation:
+FastAPI は自動的にインタラクティブな API ドキュメントを提供します：
 - Swagger UI: `http://localhost:8000/docs`
 - ReDoc: `http://localhost:8000/redoc`
 
-## Running Tests
+## テストの実行
 
-Run the test suite with pytest:
+pytest でテストスイートを実行します：
 
 ```bash
 pytest
 ```
 
-For verbose output:
+詳細な出力を表示する場合：
 
 ```bash
 pytest -v
